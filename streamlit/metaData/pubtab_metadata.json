@@ -1,0 +1,11 @@
+{
+    "metaData":{
+        "pageLayout": "Fully Automatic Region Parsing", 
+        "pageName": "PubTab", 
+        "dataPaths": {
+            "data":"/home/user/hdia/hindola/hindola/visualizer/dev-server/icdar-visualizer/pubtab_data.json"
+        },
+        "outputMasks": {"groundTruth":1}
+
+    }
+}

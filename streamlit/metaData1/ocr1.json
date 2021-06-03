@@ -1,0 +1,12 @@
+{
+    "metaData": {
+        "pageLayout": "OCR",
+        "pageName": "Google-OCR",
+        "dataPaths": {
+            "Page 1": "/home/khadiravana/Desktop/icdar/icdar-visualizer/streamlit/new_gocr/gocr_1.json",
+            "Page 2": "/home/khadiravana/Desktop/icdar/icdar-visualizer/streamlit/new_gocr/gocr_2.json",
+            "Page 3": "/home/khadiravana/Desktop/icdar/icdar-visualizer/streamlit/new_gocr/gocr_3.json",
+            "Page 4":"/home/khadiravana/Desktop/icdar/icdar-visualizer/streamlit/new_gocr/gocr_4.json"
+        }
+    }
+}

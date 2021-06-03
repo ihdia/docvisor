@@ -1,0 +1,11 @@
+{
+    "metaData":{
+        "pageLayout": "Fully Automatic Region Parsing", 
+        "pageName": "FullyAutomatic", 
+        "dataPaths": {
+            "data":"/home/user/hdia/hindola/hindola/visualizer/result-formatted.json"
+        },
+        "outputMasks": {"groundTruth":1,"modelPrediction":1}
+
+    }
+}
