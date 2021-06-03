@@ -12,3 +12,4 @@ Tool to visualize results of models for :
 2. For Linux users: `./run.sh`
 3. The tool will run on localhost:8501
 
+For tool's documentation -- kindly visit https://khadiravana-belagavi.github.io/icdar-visualizer/
