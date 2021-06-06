@@ -106,6 +106,7 @@ Note: This component will only work if you have attentions for your model.
 # Fully Automatic Layout
 
 **Indiscapes-v2 Dataset:**
+
 ![gif showing visualization in fully automatic](gifs/fully-automatic-layout.gif)
 
 Gif showing the visualization of ground Truth and predictions on the Indiscapes-v2 dataset using the Fully Automatic Layout.
