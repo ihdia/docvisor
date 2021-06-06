@@ -28,7 +28,7 @@ entries:
       output: web, pdf
 
     - title: Get started
-      url: /my_doc_getting_started.html
+      url: /getting_started.html
       output: web, pdf
     
     - title: Paper
@@ -51,16 +51,12 @@ entries:
       url: /image2Text.html
       output: web, pdf
     
-    - title: Metrics
-      url: /ocr_metrics.html
-      output: web, pdf
-    
     - title: Navigation
-      url: /navigation.html
+      url: /ocr_navigation.html
       output: web, pdf
     
     - title: Diff Visualizer
-      url: /diffVisualizer.html
+      url: /ocr_diffVisualizer.html
       output: web, pdf
     
     - title: Bookmarks and Save
@@ -94,6 +90,10 @@ entries:
       url: /fa_bas.html
       output: web, pdf
 
+    - title: Gallery
+      url: /fa_gallery.html
+      output: web, pdf
+
 
   - title: Box Supervised
     output: web, pdf
@@ -122,7 +122,6 @@ entries:
     - title: Bookmark and Save
       url: /box_bas.html
       output: web, pdf
-
 
   - title: Contributors
     output: web, pdf
