@@ -23,7 +23,7 @@ git clone https://github.com/ihdia/docvisor
 
 If you do not have git or you want to download the zip file, download the zip file from [here](https://github.com/ihdia/docvisor/archive/refs/heads/main.zip) and unzip the tool to any location on your divice.
 
-## Data Preperation
+## Step 2: Data Preperation
 
 There three main layouts of the DocVisor tool:
 
@@ -38,7 +38,7 @@ You can load one or more of these tools to the DocVisor tool at any given point 
 - To load the OCR tool, prepare your datafiles as described [here](/ocr_layout.html) 
 
 
-## Setting up your environment
+## Step 3: Setting up your environment
 
 1. Create a conda environment using the following command:
 
@@ -57,7 +57,7 @@ You can load one or more of these tools to the DocVisor tool at any given point 
    ```
 
 
-## Modify Config File
+## Step 4: Modify Config File
 
 1. Place all the metaData files in one directory
 
@@ -75,7 +75,7 @@ The metaData directory will look like:
 2. Change the path of the metaData file in the docvisor/config.py file.
 
 
-## Launch the tool
+## Step 5: Launch the tool
 
 Launch the tool by running `./run.sh` script. 
 
