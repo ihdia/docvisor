@@ -9,10 +9,13 @@ permalink: contributors.html
 folder: mydoc
 ---
 
+#### Supervision
+- Dr. Ravi Kiran Sarvadevabhatla (ravi.kiran@iiit.ac.in)
+
 ### Contributors
 
-#### BoundaryNet Layout
-- Pranav Tadimeti (pranav.tadimeti@student.iiit.ac.in)
+#### Box Supervised Layout
+- Pranav Tadimeti (pranav.tadimeti@students.iiit.ac.in)
 
 #### OCR Layout
 
@@ -20,10 +23,8 @@ folder: mydoc
 - Suman Michael (sumanmichael01@gmail.com)
 
 #### Fully-Automatic Layout
-- Pranav Tadimeti (pranav.tadimeti@student.iiit.ac.in)
+- Pranav Tadimeti (pranav.tadimeti@students.iiit.ac.in)
 
-#### Supervision
-- Ravi Kiran Sarvadevabhatla (ravi.kiran@iiit.ac.in)
 
 
 
