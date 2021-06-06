@@ -1,0 +1,198 @@
+[
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "404.html",
+"summary": ""
+}
+,
+
+
+
+
+
+{
+"title": "About",
+"tags": "",
+"keywords": "",
+"url": "about",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "About the Tool&#39;s author",
+"tags": "",
+"keywords": "docVisor tool, Contact Points, Contributors",
+"url": "contributors.html",
+"summary": "All about the contributors to this tool. Feel free to contact them over their mail id's provided."
+}
+,
+
+
+
+{
+"title": "Bookmark and Save",
+"tags": "",
+"keywords": "bookmark, save",
+"url": "fa_bas.html",
+"summary": "Description of Bookmarking and Saving in Fully Automatic layout."
+}
+,
+
+
+
+{
+"title": "Metrics",
+"tags": "",
+"keywords": "metrics",
+"url": "fa_metrics.html",
+"summary": "Description of Metrics in Fully Automatic layout."
+}
+,
+
+
+
+{
+"title": "Navigation",
+"tags": "",
+"keywords": "navigation",
+"url": "fa_navigation.html",
+"summary": "Description of navigation process in Fully Automatic Layout."
+}
+,
+
+
+
+{
+"title": "Settings",
+"tags": "",
+"keywords": "settings",
+"url": "fa_settings.html",
+"summary": "Description of Settings in Fully Automatic layout."
+}
+,
+
+
+
+{
+"title": "Layout Setup",
+"tags": "",
+"keywords": "setup",
+"url": "fa_setup.html",
+"summary": "Description of how to set up Fully Automatic Layout."
+}
+,
+
+
+
+{
+"title": "Visualization",
+"tags": "",
+"keywords": "visualization",
+"url": "fa_vis.html",
+"summary": "Description of Visualization in Fully Automatic layout."
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Introduction",
+"tags": "",
+"keywords": "introduction",
+"url": "index.html",
+"summary": "Description of the documentation web page."
+}
+,
+
+
+
+{
+"title": "About the Tool&#39;s author",
+"tags": "",
+"keywords": "docVisor tool, Contact Points, Contributors",
+"url": "mydoc_about.html",
+"summary": "All about the contributors to this tool"
+}
+,
+
+
+
+{
+"title": "About the Tool&#39;s author",
+"tags": "getting_started",
+"keywords": "docVisor tool, Contact Points, Contributors",
+"url": "mydoc_about.html",
+"summary": "All about the contributors to this tool"
+}
+,
+
+
+
+{
+"title": "Setting Up OCR Layout",
+"tags": "",
+"keywords": "ocr-layout,DocVisor,attention",
+"url": "ocr_layout.html",
+"summary": "This page carries all information required to load the OCR-layout of the DocVisor tool."
+}
+,
+
+
+
+
+
+
+
+
+
+
+
+{
+"title": "Sample post",
+"tags": "newsgetting_started",
+"keywords": "",
+"url": "samplepost.html",
+"summary": "This is some summary frontmatter for my sample post."
+}
+,
+
+
+{
+"title": "Welcome to Jekyll!",
+"tags": "news",
+"keywords": "",
+"url": "myupdate.html",
+"summary": ""
+}
+,
+
+
+{
+"title": "Test post from last year",
+"tags": "news",
+"keywords": "",
+"url": "test-post-from-last-year.html",
+"summary": ""
+}
+
+
+
+]

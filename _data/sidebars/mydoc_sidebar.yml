@@ -1,0 +1,134 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: DocVisor 
+  version: 1.0
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Overview
+    output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      url: /index.html
+      output: web, pdf
+
+    - title: Get started
+      url: /my_doc_getting_started.html
+      output: web, pdf
+    
+    - title: Paper
+      url: /paper.html
+      output: web,pdf
+
+  - title: OCR
+    output: web, pdf
+    folderitems:
+
+    - title: Layout Setup
+      url: /ocr_layout.html
+      output: web, pdf
+
+    - title: Text to Image Mapping
+      url: /text2Image.html
+      output: web, pdf
+
+    - title: Image to Text Mapping
+      url: /image2Text.html
+      output: web, pdf
+    
+    - title: Metrics
+      url: /ocr_metrics.html
+      output: web, pdf
+    
+    - title: Navigation
+      url: /navigation.html
+      output: web, pdf
+    
+    - title: Diff Visualizer
+      url: /diffVisualizer.html
+      output: web, pdf
+    
+    - title: Bookmarks and Save
+      url: /ocr_bookmakrs_and_save.html
+
+  - title: Fully Automatic
+    output: web, pdf
+    folderitems:
+
+    - title: Layout Setup
+      url: /fa_setup.html
+      output: web, pdf
+
+    - title: Navigation
+      url: /fa_navigation.html
+      output: web, pdf
+
+    - title: Visulization
+      url: /fa_vis.html
+      output: web, pdf
+    
+    - title: Settings
+      url: /fa_settings.html
+      output: web, pdf
+
+    - title: Metrics
+      url: /fa_metrics.html
+      output: web, pdf
+
+    - title: Bookmark and Save
+      url: /fa_bas.html
+      output: web, pdf
+
+
+  - title: Box Supervised
+    output: web, pdf
+    folderitems:
+
+    - title: Layout Setup
+      url: /box_setup.html
+      output: web, pdf
+
+    - title: Navigation
+      url: /box_navigation.html
+      output: web, pdf
+
+    - title: Visualization
+      url: /box_vis.html
+      output: web, pdf
+
+    - title: Settings
+      url: /box_settings.html
+      output: web, pdf
+
+    - title: Metrics
+      url: /box_metrics.html
+      output: web, pdf
+
+    - title: Bookmark and Save
+      url: /box_bas.html
+      output: web, pdf
+
+
+  - title: Contributors
+    output: web, pdf
+
+    folderitems:
+
+    - title: Contributors
+      url: /contributors.html
+      output: web, pdf

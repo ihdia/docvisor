@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="This page carries all information required to load the OCR-layout of the DocVisor tool.">
+<meta name="keywords" content=" ocr-layout,DocVisor,attention">
+<title>Setting Up OCR Layout | DocVisor Tool Documentation</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> DocVisor Tool Documentation</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://github.com/ihdia/docvisor" target="_blank" rel="noopener">GitHub</a></li>
+                
+                
+                
+                <li><a href="news">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="mydoc_introduction.html">Jekyll Documentation Theme</a></li>
+                        
+                        
+                        
+                        <li><a href="p1_landing_page.html">Product 1</a></li>
+                        
+                        
+                        
+                        <li><a href="p2_landing_page.html">Product 2</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:khadiravana.belagavi@research.iiit.ac.in?subject=DocVisor Help feedback&body=I have some feedback about the Setting Up OCR Layout page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Setting Up OCR Layout">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">DocVisor 1.0</li>
+  
+  
+  
+      
+  
+  <li>
+      <a title="Overview" href="#">Overview</a>
+      <ul>
+          
+          
+          
+          <li><a title="Introduction" href="index.html">Introduction</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Get started" href="my_doc_getting_started.html">Get started</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Paper" href="paper.html">Paper</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="OCR" href="#">OCR</a>
+      <ul>
+          
+          
+          
+          <li class="active"><a title="Layout Setup" href="ocr_layout.html">Layout Setup</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Text to Image Mapping" href="text2Image.html">Text to Image Mapping</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Image to Text Mapping" href="image2Text.html">Image to Text Mapping</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Metrics" href="ocr_metrics.html">Metrics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Navigation" href="navigation.html">Navigation</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Diff Visualizer" href="diffVisualizer.html">Diff Visualizer</a></li>
+          
+          
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Fully Automatic" href="#">Fully Automatic</a>
+      <ul>
+          
+          
+          
+          <li><a title="Layout Setup" href="fa_setup.html">Layout Setup</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Navigation" href="fa_navigation.html">Navigation</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Visulization" href="fa_vis.html">Visulization</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Settings" href="fa_settings.html">Settings</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Metrics" href="fa_metrics.html">Metrics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Bookmark and Save" href="fa_bas.html">Bookmark and Save</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Box Supervised" href="#">Box Supervised</a>
+      <ul>
+          
+          
+          
+          <li><a title="Layout Setup" href="box_setup.html">Layout Setup</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Navigation" href="box_navigation.html">Navigation</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Visualization" href="box_vis.html">Visualization</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Settings" href="box_settings.html">Settings</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Metrics" href="box_metrics.html">Metrics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Bookmark and Save" href="box_bas.html">Bookmark and Save</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Contributors" href="#">Contributors</a>
+      <ul>
+          
+          
+          
+          <li><a title="Contributors" href="contributors.html">Contributors</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Setting Up OCR Layout</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">This page carries all information required to load the OCR-layout of the DocVisor tool.</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+
+    
+
+   <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Installation of the DocVisor tool is a pre-requisite to be successful in loading the OCR-Layout.  If you have not installed the tool, kindly install the tool following the instructions provided here.</div>
+
+<p>To get the tool up and running, the tool requires some metadata files to be ready. The following section should help you set up the metadata files.</p>
+
+<h2 id="step-1--configuring-the-ocr-layout">Step 1 : Configuring the OCR layout</h2>
+
+<h3 id="step-11-generation-of-meta-data-file">Step 1.1 Generation of Meta Data File</h3>
+
+<p>Meta Data file is a configuration file that tells the OCR Layout of the DocVisor tool the exact location of the datafiles along with other important details. It is in <code class="language-plaintext highlighter-rouge">json</code> format. The following is an example of what a typical metadata file for the ocr-layout looks like.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "metaData": {
+        "pageLayout": "OCR",
+        "pageName": "Name of your OCR Page Layout",
+        "dataPaths": {
+            "Class 1": "/path/to/class_1.json",
+            "Class 2": "/path/to/class_2.json",
+                .               .
+                .               .
+                .               .
+            "Class N":"/path/to/class_n.json"
+        }
+    }
+}
+</code></pre></div></div>
+<ol>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">pageLayout</code>: <strong>string</strong></p>
+
+    <p>The value of <code class="language-plaintext highlighter-rouge">pageLayout</code> for this page is “OCR”. This tells the DocVisor tool to use all the other <code class="language-plaintext highlighter-rouge">metaData</code>        information and initialize the <strong>OCR</strong> layout of the DocVisor tool. The value of <code class="language-plaintext highlighter-rouge">pageLayout</code> key can be one of the following:</p>
+    <ol>
+      <li>OCR</li>
+      <li>Fully Automatic Region Parsing</li>
+      <li>Box Supervised</li>
+    </ol>
+
+    <p>The instructions in this page pertain to setting up and loading OCR(1). Checkout <a href="/fa_setup.html">this link</a> for 2 and <strong>this link</strong> for 3.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">pageName</code>: <strong>string</strong></p>
+
+    <p><code class="language-plaintext highlighter-rouge">pageName</code> : Any name of your interest. If you are having multiple OCR-layouts to be loaded, then the <code class="language-plaintext highlighter-rouge">pageName</code> variable <strong>must</strong> be unique., i.e. no two OCR layout meta data files should have the same <code class="language-plaintext highlighter-rouge">pageName</code> value.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">dataPaths</code>: <strong>dictionary</strong></p>
+
+    <p><code class="language-plaintext highlighter-rouge">dataPaths</code> is a dictionary having the structure shown above.</p>
+
+    <p>Each key : “class i” is a unique user-defined data class that the user wants to load. A common way of classifying a dataset in most deep learning scenarios is to classify it as <em>train</em>, <em>test</em> and <em>validation</em> sets. The value of each of these “class i” keys is a path to a json data file that has all the ocr data information for that particular class.</p>
+  </li>
+</ol>
+
+<p>Example of Meta Data File:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "metaData": {
+        "pageLayout": "OCR",
+        "pageName": "OCR-Printed",
+        "dataPaths": {
+            "Train": "/home/user/Desktop/docvisor/train/train_data.json",
+            "Validation":"/home/user/Desktop/docvisor/val/val_data.json",
+            "Test": "/home/user/Desktop/docvisor/test/test_data.json"
+        }
+    }
+}
+</code></pre></div></div>
+
+<h3 id="step-12-setup-directory">Step 1.2 Setup Directory</h3>
+
+<p>Create a directory containing only config files. Each instance of the layout should have a json file. For example, if we are trying to visualize the outputs of a line OCR for both typed and hand-written images, the following is the directory structure:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>metadata/
+    - ocr_handwritten.json
+    - ocr_printed.json
+</code></pre></div></div>
+
+<p>With each of the json files following the format as described above. Note that no two instances of the layout should have the same <code class="language-plaintext highlighter-rouge">pageName</code> key.</p>
+
+<h4 id="multiple-layouts">Multiple Layouts</h4>
+
+<p>If you are trying to visualize results of either Fully Automatic or Box Supervised Layouts, you can do so, by creating similar metaData files for them as described in their corresponding documentations and then place all of them into this metaData directory.</p>
+
+<p>Example of directory containing all three layouts:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>metaData/
+    - ocr_handwritten.json
+    - fullyAutomatic.json
+    - boxSupervised.json
+</code></pre></div></div>
+
+<p>The docVisor tool will launch single instances of the OCR, Fully Automatic and Box Supervised tools.</p>
+
+<h4 id="multiple-instances-of-the-same-layout">Multiple Instances of the Same Layout</h4>
+
+<p>The DocVisor tool allows the user to view multiple instances of the same layout in a single session. For example, if you have a handwritten dataset and printed dataset and you are wanting to analyze the OCR outputs of both of these datasets, you can just create mulitple a seperate json file with unique <code class="language-plaintext highlighter-rouge">pageName</code> key and place the file in the metaData directory.</p>
+
+<p>The metaData directory will look like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>metaData/
+    - ocr_handwritten.json
+    - ocr_printed.json
+    - fullyAutomatic.json
+    - boxSupervised.json
+
+</code></pre></div></div>
+
+<p>For the above directory structure, the DocVisor tool will load two instances of the OCR layout and a single layout of fully automatic and box supervised layouts.</p>
+
+<h3 id="step-13-updating-the-config-file">Step 1.3 Updating the Config File</h3>
+
+<p>In docVisor/config.py file, change the <code class="language-plaintext highlighter-rouge">metaDataDir</code> to point to the metaData Directory that you have created.</p>
+
+<h2 id="step-2-launch-the-tool">Step 2: Launch the Tool</h2>
+
+<p>To launch the tool, you need to run the ./run.sh file. The tool will load on localhost with <code class="language-plaintext highlighter-rouge">port 8501</code>. If <code class="language-plaintext highlighter-rouge">8501</code> is pre-occupied, check the terminal to know which exact port in which it has been loaded.</p>
+
+<h2 id="help-and-feedback">Help and Feedback</h2>
+
+<p>For Feedback or queries, you can either visit the <a href="https://github.com/ihdia/docvisor">github repo</a> and create issues or use the discussion format. For more details, you can mail, <code class="language-plaintext highlighter-rouge">docvisor.iiith@gmail.com.</code></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+<!-- 
+ -->
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2021 docVisor. All rights reserved. <br />
+<span>Page last updated:</span> June 4, 2021<br/> Site last generated: Jun 6, 2021 <br />
+<p><img src="images/iiit-new.png" alt="IIIT-H" style="height: 100px; width: 200px;"/></p>
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-66296557-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+</html>
