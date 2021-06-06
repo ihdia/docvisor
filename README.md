@@ -90,7 +90,7 @@ DocVisor also supports visualization of some common datasets such as [PubTabNet]
 
 There are two main components of the OCR Layout provided in the docvisor tool:
 
-**Text to Image Selection:** The user can select a substring of the text, and the corresponding portion in the image gets highlighted.
+**Text Selection:** The user can select a substring of the text, and the corresponding portion in the image gets highlighted.
 
 Note: This component will only work if you have attentions for your model.
 
@@ -98,9 +98,14 @@ Note: This component will only work if you have attentions for your model.
 ![gif showing text selection in ocr](gifs/textSelectionExample.gif)
 
 
+Gif depicting the Text2Image mapping using the Text Selection feature provided in OCR layout of the DocVisor tool.
+
+
 **Image to Text Selection:** The user can select a sub-portion of the image, and the corresponding substring in the predicted text of models having attentions gets highlighted.
 
 ![gif showing Image selection in ocr](gifs/ImageSelectionExample.gif)
+
+Gif depicting the Image2Text mapping using the Image Selection feature provided in OCR layout of the DocVisor tool.
 
 
 # Fully Automatic Layout
