@@ -82,6 +82,7 @@ Launch the tool by running `./run.sh` script.
 
 DocVisor also supports visualization of some common datasets such as [PubTabNet](https://github.com/ibm-aur-nlp/PubTabNet) and [DocBank](https://github.com/doc-analysis/DocBank).
 
+### To view the full documentation, visit https://ihdia.iiit.ac.in/docvisor/
 
 # DocVisor Features and Examples
 
