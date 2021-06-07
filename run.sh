@@ -1,1 +1,1 @@
-streamlit run streamlit/docVisor.py
+streamlit run tool/docVisor.py

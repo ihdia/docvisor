@@ -1,0 +1,10 @@
+{
+    "metaData":{
+        "pageLayout": "Fully Automatic Region Parsing", 
+        "pageName": "DocBank", 
+        "dataPaths": {
+            "train":"/home/user/hdia/hindola/hindola/visualizer/dev-server/icdar-visualizer/docbank_data.json"},
+        "outputMasks": {"groundTruth":1}
+        }
+        
+}

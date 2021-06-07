@@ -1,0 +1,6 @@
+tool/layouts/boxSupervision/__pycache__/*
+tool/layouts/OCR/__pycache__/*
+tool/layouts/fullyAutomatic/__pycache__/*
+tool/metaData/*
+tool/localData/*
+tool/__pycache__/*
