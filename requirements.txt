@@ -4,4 +4,5 @@ distinctipy==1.1.5
 htbuilder
 jsonlines
 pdfplumber
+plotly
 
