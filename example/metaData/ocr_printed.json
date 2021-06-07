@@ -1,0 +1,10 @@
+{
+    "metaData": {
+        "pageLayout": "OCR",
+        "pageName": "OCR-Printed",
+        "dataPaths": {
+            "Train": "example/jsonData/OCR/train.json",
+            "Test": "example/jsonData/OCR/test.json"
+        }
+    }
+}

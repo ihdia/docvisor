@@ -3,7 +3,7 @@
 # All json files in the `metaDataDir` must be in some specified format.
 
 
-metaDataDir = '/home/user/hdia/hindola/hindola/visualizer/hdia/docvisor/tool/metaData/'
+metaDataDir = 'example/metaData'
 docVisorRepo = 'https://github.com/khadiravana-belagavi/icdar-visualizer'
 
 save_dir = '.'
