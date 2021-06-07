@@ -72,7 +72,7 @@ The metaData directory will look like:
 
     ```
 
-2. Change the path of the metaData file in the docvisor/config.py file.
+2. Change the path of the metaData file in the tool/config.py file.
 
 
 ## Step 5: Launch the tool
@@ -81,7 +81,13 @@ Launch the tool by running `./run.sh` script.
 
 
 ## Load Example Data
+ 
+ We have provided an example folder in the repository for all the layouts. To load the example layouts, follow the steps below:
 
+1. Ensure that the `metaDataDir` field in `tool/config.py` is set to `example/metaData`
+2. Run `./run.sh` script to load the app
+
+{% include note.html content="Ensure that the requirements have been installed. To do so, refer to [this step](#step-3-setting-up-your-environment)." %}
 
 
 

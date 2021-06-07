@@ -11,7 +11,7 @@ keywords: setup
 
 ### Step 1.1 Generation of Meta Data File
 
-The metadata for the box supervised tool essentially acts as a configuration file, through which the user can specify the paths of the json data for the layout, as well as the layout type which the data belongs to (Box Supervised Region Parsing in this case). Additionally, the user can also specify other configuration data for the layout which would be rendered from this metadata, such as whether certain outputs should be shown in the plot with a mask or not. The metadata is expected to lie in the `metaData` folder within the `streamlit` folder, and must be a `json` file which follows a specific format.
+The metadata for the box supervised tool essentially acts as a configuration file, through which the user can specify the paths of the json data for the layout, as well as the layout type which the data belongs to (Box Supervised Region Parsing in this case). Additionally, the user can also specify other configuration data for the layout which would be rendered from this metadata, such as whether certain outputs should be shown in the plot with a mask or not. 
 
 Shown below is an example metadata file:
 
@@ -152,7 +152,7 @@ The json file with the data for the box-supervised layout is a list of dictionar
 
 ### Step 1.4 Updating the Config File
 
-In docVisor/config.py file, change the `metaDataDir` to point to the metaData Directory that you have created.
+In tool/config.py file, change the `metaDataDir` to point to the metaData Directory that you have created.
 
 
 ## Step 2: Launch the Tool

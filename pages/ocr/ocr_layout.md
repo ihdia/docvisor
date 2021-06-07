@@ -118,7 +118,7 @@ For the above directory structure, the DocVisor tool will load two instances of 
 
 ### Step 1.3 Updating the Config File
 
-In docVisor/config.py file, change the `metaDataDir` to point to the metaData Directory that you have created.
+In tool/config.py file, change the `metaDataDir` to point to the metaData Directory that you have created.
 
 ## Step 2: Prepare your Data
 
@@ -210,7 +210,7 @@ each object of the array having the following format:
     
         Using the numpy.ravel() command, ravel that array and store and then set it as the value for the `attentions` field.
 
-        Many a times, the sequence predicted and the final sequence displayed is different. For example if you are using some kind of endcoding or your predicted sequence is LaTeX code and you want to visualize the actual compiled output.For the indicOCR case, the sequence predicted was a string of concatenations of the [ords](https://docs.python.org/3.4/library/functions.html?highlight=ord#ord) of each character. So this [line](https://github.com/khadiravana-belagavi/icdar-visualizer/blob/f959c702a8ee75df2749b6f1c99952a624dd7a28/streamlit/layouts/OCR/src/ocrHelper.py#L170) was used for creating the character-Image-pixels mapping. If your encoding structure is different or if you do not have any encoding, feel free to modify/delete the call of `ord` function.
+        Many a times, the sequence predicted and the final sequence displayed is different. For example if you are using some kind of endcoding or your predicted sequence is LaTeX code and you want to visualize the actual compiled output.For the indicOCR case, the sequence predicted was a string of concatenations of the [ords](https://docs.python.org/3.4/library/functions.html?highlight=ord#ord) of each character. So this [line](https://github.com/khadiravana-belagavi/icdar-visualizer/blob/f959c702a8ee75df2749b6f1c99952a624dd7a28/tool/layouts/OCR/src/ocrHelper.py#L170) was used for creating the character-Image-pixels mapping. If your encoding structure is different or if you do not have any encoding, feel free to modify/delete the call of `ord` function.
 
         For more clarification contack `docvisor.iiith@gmail.com`
     
