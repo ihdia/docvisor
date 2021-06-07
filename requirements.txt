@@ -1,1 +1,5 @@
-streamlit
+streamlit==0.82.0
+opencv-python==4.5
+distinctipy==1.1.5
+htbuilder
+
