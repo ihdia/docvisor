@@ -3,6 +3,9 @@
 DocVisor is an open-source visualization tool for document layout analysis. With DocVisor, it is possible to visualize data from three prominent document analysis tasks: Full Document Analysis, OCR and Box-Supervised Region Parsing. DocVisor offers various features such as ground-truth and intermediate output visualization, sorting data by key metrics as well as comparison of outputs from various other models simultaneously.
 
 
+**NOTE: A detailed documentation to this repository is provided on : https://ihdia.iiit.ac.in/docvisor/** For a quick setup, follow the below step.
+
+
 ## Getting Started
 
 
@@ -60,14 +63,12 @@ You can load one or more of these tools to the DocVisor tool at any given point 
 
 The metaData directory will look like:
 
-    ```
     metaData/
         - ocr_handwritten.json
         - ocr_printed.json
         - fullyAutomatic.json
         - boxSupervised.json
 
-    ```
 
 2. Change the path of the metaData file in the docvisor/config.py file.
 
@@ -77,15 +78,9 @@ The metaData directory will look like:
 Launch the tool by running `./run.sh` script. 
 
 
-
-# Famous
-
-DocVisor also supports visualization of some common datasets such as [PubTabNet](https://github.com/ibm-aur-nlp/PubTabNet) and [DocBank](https://github.com/doc-analysis/DocBank).
-
-### To view the full documentation, visit https://ihdia.iiit.ac.in/docvisor/
-
 # DocVisor Features and Examples
 
+DocVisor also supports visualization of some common datasets such as [PubTabNet](https://github.com/ibm-aur-nlp/PubTabNet) and [DocBank](https://github.com/doc-analysis/DocBank).
 
 # OCR Layout
 
