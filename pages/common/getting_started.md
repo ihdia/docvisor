@@ -2,7 +2,6 @@
 title: Getting Started 
 keywords: docVisor tool, Contact Points, Contributors
 last_updated: May 25, 2021
-# tags: [getting_started]
 summary: "All necessary instructions to use the DocVisor tool."
 sidebar: mydoc_sidebar
 permalink: getting_started.html
@@ -33,9 +32,9 @@ There three main layouts of the DocVisor tool:
 
 You can load one or more of these tools to the DocVisor tool at any given point in time.
 
-- To load the Fully Automatic tool, prepare your datafiles as described [here](/fa_setup.html)
-- To load the Box Supervised tool, prepare your datafiles as described [here](/box_setup.html)
-- To load the OCR tool, prepare your datafiles as described [here](/ocr_layout.html) 
+- To load the Fully Automatic tool, prepare your datafiles as described [here](/docvisor/fa_setup.html)
+- To load the Box Supervised tool, prepare your datafiles as described [here](/docvisor/box_setup.html)
+- To load the OCR tool, prepare your datafiles as described [here](/docvisor/ocr_layout.html) 
 
 
 ## Step 3: Setting up your environment
@@ -63,14 +62,12 @@ You can load one or more of these tools to the DocVisor tool at any given point 
 
 The metaData directory will look like:
 
-    ```
     metaData/
         - ocr_handwritten.json
         - ocr_printed.json
         - fullyAutomatic.json
         - boxSupervised.json
 
-    ```
 
 2. Change the path of the metaData file in the tool/config.py file.
 
