@@ -4,3 +4,7 @@ tool/layouts/fullyAutomatic/__pycache__/*
 tool/metaData/*
 tool/localData/*
 tool/__pycache__/*
+*_2021
+*.pyc
+tool/jsonData*
+
