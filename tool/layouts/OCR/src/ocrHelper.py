@@ -77,7 +77,7 @@ class OCRHelper:
                     self.metric_details[model] = list(self.JSONdata[0]['outputs'][model]["metrics"].keys())
                     self.metric_details[model].append('None')
                 else:
-                    self.metric_details[model]='None'
+                    self.metric_details[model]=['None']
             
             self.sortedSecIndices = {model:{} for model in self.models}
 
@@ -86,7 +86,6 @@ class OCRHelper:
             
             for model in self.metric_details:
                 for metric in self.metric_details[model]:
-                    
                     if metric!='None':
                         self.sortedSecIndices[model][metric]= [i[0] for i in sorted(enumerate(self.JSONdata), key=lambda x:x[1]['outputs'][model]['metrics'][metric])]
                     else:
