@@ -232,8 +232,8 @@ if state.isMetaDataLoaded is True:
 
     sc1,_,sc2 = st.sidebar.beta_columns([3,0.1,3])
 
-    sc1.image("streamlit/images/iiit-new.png",width=125)
-    sc2.image("streamlit/images/cvit-logo.jpeg",width=100)
+    sc1.image("tool/images/iiit-new.png",width=125)
+    sc2.image("tool/images/cvit-logo.jpeg",width=100)
     
     
     st.sidebar.title('DocVisor')

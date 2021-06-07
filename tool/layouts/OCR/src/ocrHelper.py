@@ -15,7 +15,7 @@ class OCRHelper:
     def __init__(self,jsonFilePath):
 
         if not os.path.exists(jsonFilePath):
-            print(jsonFilePath)
+            # print(jsonFilePath)
             raise OCRInputError
 
         # valid json file path

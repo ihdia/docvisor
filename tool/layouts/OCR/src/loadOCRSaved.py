@@ -2,7 +2,7 @@ import sys
 import os
 import json
 import numpy as np
-print(sys.argv)
+# print(sys.argv)
 
 if len(sys.argv)<2:
     print('Wrong format')
@@ -23,7 +23,7 @@ def loadData(saveDir):
     lines = [x.strip() for x in lines]
     data = [tuple(x.split()) for x in lines]
     data = set(data)
-    print(data)
+    # print(data)
 
     for doc in data:
         docClass , index = doc

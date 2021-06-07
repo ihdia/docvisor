@@ -10,7 +10,7 @@ from PIL import Image
 import io
 import difflib
 import os
-from config import roiSelectorBuildDir,textHighlighterBuildDir,defaultThreshold
+from config import defaultThreshold
 from shutil import copyfile
 from uuid import uuid4
 from layouts.OCR.src.gif import *
@@ -589,7 +589,7 @@ def app(metaData=None):
                         state.bookmarks[key].append({dataClass:index})
                         # print(dataClass)
                         if 'bookmarks' not in state.pageDetails[key]:
-                            print('initialized bookmark')
+                            # print('initialized bookmark')
                             state.pageDetails[key]['bookmarks'] = len(state.bookmarks[key])-1
                         st.success("Successfully bookmarked")
                 

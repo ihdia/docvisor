@@ -1,8 +1,8 @@
 import streamlit.components.v1 as components
 from uuid import uuid4
 
-_roi_selector = components.declare_component("roi_selector",path="streamlit/layouts/OCR/builds/roiSelectorbuild")
-_text_highlighter = components.declare_component("text_highlighter",path="streamlit/layouts/OCR/builds/textHighlighterbuild")
+_roi_selector = components.declare_component("roi_selector",path="tool/layouts/OCR/builds/roiSelectorbuild")
+_text_highlighter = components.declare_component("text_highlighter",path="tool/layouts/OCR/builds/textHighlighterbuild")
 
 def roi_selector(img_b64, isEnabled,height, key,default={"start_px":-1,"end_px":-1}):
     default = {"start_px":-1,"end_px":-1,"key":key}

@@ -118,7 +118,7 @@ def loadInteractiveImageComponent(key,index,dataClass,model,ocr,state,roiSelecto
         
 
         if (key==state.prevKey and (dataClass!=state.prevDataClass or (dataClass!='bookmarks' and primaryModel!=state.prevPrimaryModel))):
-            print('Reset')
+            # print('Reset')
             state.textRange = {
                     key:{
                             model:{

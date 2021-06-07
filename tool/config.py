@@ -3,11 +3,8 @@
 # All json files in the `metaDataDir` must be in some specified format.
 
 
-metaDataDir = '/home/user/hdia/hindola/hindola/visualizer/dev-server/icdar-visualizer/streamlit/metaData/'
+metaDataDir = '/home/user/hdia/hindola/hindola/visualizer/hdia/docvisor/tool/metaData/'
 docVisorRepo = 'https://github.com/khadiravana-belagavi/icdar-visualizer'
-
-roiSelectorBuildDir = "/home/user/hdia/hindola/hindola/visualizer/dev-server/icdar-visualizer/streamlit/roi_selector/frontend/build"
-textHighlighterBuildDir = "/home/user/hdia/hindola/hindola/visualizer/dev-server/icdar-visualizer/streamlit/text_highlighter/frontend/build"
 
 save_dir = '.'
 

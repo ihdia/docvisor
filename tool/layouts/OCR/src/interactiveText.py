@@ -70,7 +70,7 @@ def loadInteractiveTextComponent(key,index,dataClass,model,ocr,state,textSelecto
                                                         default = {"start_idx":-1,"end_idx":-1},
                                                         font_size=state.fontSize["playground"]
                                                     )
-            print(selectedTextRange)
+            # print(selectedTextRange)
             if selectedTextRange!=state.textRange[key][model]:
 
                 state.textRange[key][model] = selectedTextRange
