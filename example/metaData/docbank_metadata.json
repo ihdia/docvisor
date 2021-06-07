@@ -1,0 +1,10 @@
+{
+    "metaData":{
+        "pageLayout": "Fully Automatic Region Parsing", 
+        "pageName": "DocBank", 
+        "dataPaths": {
+            "train":"example/jsonData/FullyAutomatic/docbank/train.json"},
+        "outputMasks": {"groundTruth":1}
+        }
+        
+}

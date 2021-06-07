@@ -1,0 +1,11 @@
+{
+    "metaData":{
+        "pageLayout": "Fully Automatic Region Parsing", 
+        "pageName": "PubTab", 
+        "dataPaths": {
+            "train":"example/jsonData/FullyAutomatic/pubtabnet/train.json"
+        },
+        "outputMasks": {"groundTruth":1,"modelPrediction":1}
+
+    }
+}

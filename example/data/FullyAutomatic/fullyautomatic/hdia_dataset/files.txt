@@ -1,0 +1,6 @@
+/data1/hdia_dataset/penn-in-hand/Ms.Coll.390,Item2137-Gadadharabhattacarya,active17thcentury-18thcentury-Samanyanirupana/10.jpg
+/data1/hdia_dataset/bhoomi/SVARAMANJARI/RASB/569/72.jpg
+/data1/hdia_dataset/penn-in-hand/Ms.Coll.390,Item1577-Sulapani,active1365-1445-Prayascittaviveka/75.jpg
+/data1/hdia_dataset/penn-in-hand/Ms.Coll.390,Item1711-BhattojiDiksita-Praudhmanorama/102.jpg
+/data1/hdia_dataset/jain-mscripts/Chandibazaar/chandibajar/0013/images/0255.jpg
+/data1/hdia_dataset/ASR_Images/ASR-B02-S10/B02-S10-206.jpg
