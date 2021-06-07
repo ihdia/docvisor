@@ -1,10 +1,11 @@
 tool/layouts/boxSupervision/__pycache__/*
 tool/layouts/OCR/__pycache__/*
 tool/layouts/fullyAutomatic/__pycache__/*
-tool/metaData/*
+tool/metaData*
 tool/localData/*
 tool/__pycache__/*
 *_2021
 *.pyc
 tool/jsonData*
+tool/handwritten*
 
