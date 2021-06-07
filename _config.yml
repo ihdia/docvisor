@@ -12,7 +12,7 @@ site_title: DocVisor Tool Documentation
 company_name: DocVisor
 # this appears in the footer
 
-permalink : /docvisor/
+# permalink : /docvisor/
 
 # github_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
