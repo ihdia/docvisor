@@ -29,6 +29,8 @@ DocVisor is an open-source visualization tool for document layout analysis. With
 
 **NOTE: A detailed documentation to this repository is provided on : https://ihdia.iiit.ac.in/docvisor/** 
 
+-----
+
 # DocVisor Features
 
 
