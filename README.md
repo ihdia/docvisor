@@ -22,11 +22,12 @@ DocVisor is an open-source visualization tool for document layout analysis. With
     - [Step 4: Modify Config File](#step-4-modify-config-file)
     - [Step 5: Launch the tool](#step-5-aunch-the-tool)
 - [Load Example Data](#load-example-data)
+- [Full Documentation](#full-documentation)
 
 
 
 
-**NOTE: A detailed documentation to this repository is provided on : https://ihdia.iiit.ac.in/docvisor/** For a quick setup, follow the below step.
+**NOTE: A detailed documentation to this repository is provided on : https://ihdia.iiit.ac.in/docvisor/** 
 
 # DocVisor Features
 
@@ -166,6 +167,10 @@ Launch the tool by running `./run.sh` script.
 2. Run `./run.sh` script to load the app
 
 **NOTE:** Ensure that the requirements have been installed. To do so, refer to [this step](#step-3-setting-up-your-environment).
+
+# Full Documentation
+
+For a detailed documentation of each tool, kindly visit the [DocVisor's documentation page](https://ihdia.iiit.ac.in/docvisor/).
 
 
 
