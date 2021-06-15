@@ -1,16 +1,44 @@
-# DocVisor 
+# About DocVisor 
 
 DocVisor is an open-source visualization tool for document layout analysis. With DocVisor, it is possible to visualize data from three prominent document analysis tasks: Full Document Analysis, OCR and Box-Supervised Region Parsing. DocVisor offers various features such as ground-truth and intermediate output visualization, sorting data by key metrics as well as comparison of outputs from various other models simultaneously.
 
-# DocVisor Features and Examples
+# Contents:
+- [About DocVisor](#about-docvisor)
+- [DocVisor Features](#docvisor-features)
+    - [OCR Layout](#ocr-layout)
+        - [Text Selection](#text-selection)
+        - [Image Selection](#image-selection)
+    - [Fully Automatic Layout](#fully-automatic-layout)
+        - [Indiscapes-v2 Dataset](#indiscapes-v2-dataset)
+        - [PubTabNet Dataset](#pubtabnet-dataset)
+        - [DocBank Dataset](#docbank-dataset)
+    - [Box Supervised Layout](#box-supervised-layout)
+- [Getting Started](#getting-started)
+    - [Step 1: Download DocVisor](#step-1-download-docvisor)
+        - [Clone Using Git](#clone-using-git)
+        - [Download Zip](#download-zip)
+    - [Step 2: Data Preperation](#step-2-data-preperation)
+    - [Step 3: Setting up your environment](#step-3-setting-up-your-environment)
+    - [Step 4: Modify Config File](#step-4-modify-config-file)
+    - [Step 5: Launch the tool](#step-5-aunch-the-tool)
+- [Load Example Data](#load-example-data)
+
+
+
+
+**NOTE: A detailed documentation to this repository is provided on : https://ihdia.iiit.ac.in/docvisor/** For a quick setup, follow the below step.
+
+# DocVisor Features
+
 
 DocVisor also supports visualization of some common datasets such as [PubTabNet](https://github.com/ibm-aur-nlp/PubTabNet) and [DocBank](https://github.com/doc-analysis/DocBank).
 
-# OCR Layout
+## OCR Layout
 
 There are two main components of the OCR Layout provided in the docvisor tool:
 
-**Text Selection:** The user can select a substring of the text, and the corresponding portion in the image gets highlighted.
+### Text Selection:
+The user can select a substring of the text, and the corresponding portion in the image gets highlighted.
 
 Note: This component will only work if you have attentions for your model.
 
@@ -21,22 +49,23 @@ Note: This component will only work if you have attentions for your model.
 Gif depicting the Text2Image mapping using the Text Selection feature provided in OCR layout of the DocVisor tool.
 
 
-**Image to Text Selection:** The user can select a sub-portion of the image, and the corresponding substring in the predicted text of models having attentions gets highlighted.
+## Image Selection: 
+The user can select a sub-portion of the image, and the corresponding substring in the predicted text of models having attentions gets highlighted.
 
 ![gif showing Image selection in ocr](gifs/ImageSelectionExample.gif)
 
 Gif depicting the Image2Text mapping using the Image Selection feature provided in OCR layout of the DocVisor tool.
 
 
-# Fully Automatic Layout
+## Fully Automatic Layout
 
-**Indiscapes-v2 Dataset:**
+### Indiscapes-v2 Dataset
 
 ![gif showing visualization in fully automatic](gifs/fully-automatic-layout.gif)
 
 Gif showing the visualization of ground Truth and predictions on the Indiscapes-v2 dataset using the Fully Automatic Layout.
 
-**PubTabNet Dataset:**
+### PubTabNet Dataset
 Our Fully Automatic Layout can also be used to load and visulaize the PubTabNet dataset. A gif of the same is added below:
 
 ![gif showing visualization of pubtabnet using fully automatic layout](gifs/fa_pubtabnet.gif)
@@ -44,7 +73,7 @@ Our Fully Automatic Layout can also be used to load and visulaize the PubTabNet 
 Gif showing the visualization of ground Truth and predictions on the PubTabNet dataset using the Fully Automatic Layout.
 
 
-**DocBank Dataset:**
+### DocBank Dataset
 Our Fully Automatic Layout can also be used to load and visulaize the DocBank dataset. A gif of the same is added below:
 
 ![gif showing visualization of DocBank using fully automatic layout](gifs/fa_docbank.gif)
@@ -58,12 +87,10 @@ Gif showing the visualization of ground Truth and predictions on the DocBank dat
 Gif showing the region wise visualization of ground Truth and predictions on the indiscapes-v2 dataset.
 
 
-**NOTE: A detailed documentation to this repository is provided on : https://ihdia.iiit.ac.in/docvisor/** For a quick setup, follow the below step.
-
-## Getting Started
+# Getting Started
 
 
-## Step 1 : Download or Clone DocVisor tool
+## Step 1: Download DocVisor
 
 ### Clone Using Git
 
@@ -131,7 +158,7 @@ The metaData directory will look like:
 
 Launch the tool by running `./run.sh` script. 
 
-## Load Example Data
+# Load Example Data
  
  We have provided an example folder in the repository for all the layouts. To load the example layouts, follow the steps below:
 
