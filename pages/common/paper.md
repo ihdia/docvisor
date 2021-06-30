@@ -1,22 +1,29 @@
 ---
 title: Paper
 keywords: docVisor tool, icdar2021-OST,ICDAR-OST
-last_updated: May 25, 2021
-summary: "About our Submission to ICDAR-OST 2021"
+last_updated: June 30, 2021
+summary: "Our paper that has been accepted by ICDAR-OST 2021"
 sidebar: mydoc_sidebar
 permalink: paper.html
 folder: common
 ---
 
-## June 7th, 2021 (Monday)
 
-We have submitted the DocVisor tool to ICDAR on June 7th 2021.
 
-## June 30th, 2021 (Wednesday)
+## Paper
+
+<iframe src="docvisor.pdf" style="width:1000px; height:900px;" frameborder="0"></iframe>
+
+## Timeline
+
+### Paper Submission
+
+
+We have submitted the DocVisor tool to ICDAR on June 7th, 2021 (Monday).
+
+### Paper Acceptance
 
 Our paper has been accepted by ICDAR-OST 2021 Workshop !!!
-
-Link to our paper : [Click Here](https://drive.google.com/file/d/1y0uDoR644a0bR3GSxj73Rjn6mLo3Tk4m/view?usp=sharing)
 
 
 {% include links.html %}
