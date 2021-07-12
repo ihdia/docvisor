@@ -137,15 +137,15 @@ The data files are `json` files which contain the data that is to be visualized.
 
 1. `Document ID`:**string (required)**
 
-    The data is stored on a per-document basis, with an ID being the key for that document's data. In the image shown above, data is shown for only one document. The ID of the document here is `bhoomi-4422268662325975730`.
+    The data is stored on a per-image basis, with an ID being the key for that image's data. In the image shown above, data is shown for only one image. The ID of the image here is `bhoomi-4422268662325975730`.
 
 2. `imagePath`:**string (required)**
 
-    `imagePath` is the path to the image of the document associated with the outputs to be visualized.
+    `imagePath` is the path to the image of the image associated with the outputs to be visualized.
 
 3. `regions`:**dict (required)**
 
-    `regions` is an list of dictionaries. Each dictionary in turn stores the regionwise data of the document. Every region which is to be visualized should be present in `regions` in the above format. 
+    `regions` is an list of dictionaries. Each dictionary in turn stores the regionwise data of the image. Every region which is to be visualized should be present in `regions` in the above format. 
 
 4. 
     1. `groundTruth`:**list (required)**
@@ -155,7 +155,7 @@ The data files are `json` files which contain the data that is to be visualized.
     5. `metrics`:**dict**
     6. `collection`:**string**
 
-`groundTruth` and `modelPrediction` are lists of points, and are of the form `[[x1,y1],[x2,y2], ... , [xn,yn]]`. `groundTruth` is required, but `modelPrediction` need not exist for every region. Similarly, `regionLabel` and `id` are required, but `metrics` and `collection` are not. `regionLabel` is the region class label for that particular region. `metrics` can have the values of various metrics with which the user can sort the data by during visualization. `collection` is additional information pertaining to the collection from which the document was obtained. 
+`groundTruth` and `modelPrediction` are lists of points, and are of the form `[[x1,y1],[x2,y2], ... , [xn,yn]]`. `groundTruth` is required, but `modelPrediction` need not exist for every region. Similarly, `regionLabel` and `id` are required, but `metrics` and `collection` are not. `regionLabel` is the region class label for that particular region. `metrics` can have the values of various metrics with which the user can sort the data by during visualization. `collection` is additional information pertaining to the collection from which the image was obtained. 
 
 
 ### Step 1.4 Updating the Config File

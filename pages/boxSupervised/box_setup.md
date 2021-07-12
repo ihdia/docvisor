@@ -123,11 +123,11 @@ The data files are `json` files which contain the data that is to be visualized.
 ]
 ```
 
-The json file with the data for the box-supervised layout is a list of dictionaries. Each dictionary represents the data of a single region of a document. The structure of each dictionary is as follows:
+The json file with the data for the box-supervised layout is a list of dictionaries. Each dictionary represents the data of a single region of an image . The structure of each dictionary is as follows:
 
 1. `imagePath`:**string (required)**
 
-    `imagePath` is the path to the image of the document associated with the outputs to be visualized. 
+    `imagePath` is the path to the image of the image associated with the outputs to be visualized. 
 
 2. `outputs`:**dict (required)**
 

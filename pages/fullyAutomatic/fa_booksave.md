@@ -9,7 +9,7 @@ keywords: bookmark, save
 
 ## Bookmark
 
-During analysis, the user may find an image they would want to come back to later. It would be tedious for the user to have to remember the index of the image, and this is not feasible for a large number of images. Hence, DocVisor offers a bookmarking feature, where the user can bookmark a particular region/document. The steps would be as follows:
+During analysis, the user may find an image they would want to come back to later. It would be tedious for the user to have to remember the index of the image, and this is not feasible for a large number of images. Hence, DocVisor offers a bookmarking feature, where the user can bookmark a particular region/image. The steps would be as follows:
 
 1. Click on the `Bookmark 🔖` button at the bottom of the page.
 2. Once you have bookmarked atleast one image, the `bookmarks` option is available under the `Select dataset` dropdown.
@@ -21,7 +21,7 @@ Shown below is a gif of the process. In the gif below, the user bookmarks one im
 
 ## Save
 
-If the user wants to reference the information of a region/document they are interested in later, bookmarking is only a temporary solution: it only persists for a single session. For that reason, the user can save data of the region/document. The steps are as follows:
+If the user wants to reference the information of a region/image they are interested in later, bookmarking is only a temporary solution: it only persists for a single session. For that reason, the user can save data of the region/image. The steps are as follows:
 
 1. Click the `Save 💾` button at the bottom of the page.
 2. Once saved, a folder is created for the current date, as well as a number denoting the session of the user. Every new session would create a new folder in the date folder.

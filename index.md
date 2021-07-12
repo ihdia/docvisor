@@ -50,9 +50,9 @@ The layout is designed to be highly customizable. All the relevant settings can 
 
 ### Fully-Automatic Layout:
 
-Those region segmentation approaches which do not have supervision during inference come under the family of fully-automatic region segmentation. Here, the model identifies the various regions, along with their corresponding labels.
+This layout is primarily useful for those users who would like to view the segmentation results for a single region with respect to the image as a whole. In the examples shown throughout the documentation for this layout, the data was obtained by a fully-automatic instance segmentation model.
 
-DocVisor provides the utility of output visualization of the model by being able to simultaneously view the ground truth and model output for every region, as well as the entire document. Additionally, the user can also visualize outputs on a full-document basis.
+DocVisor provides the utility of output visualization of the model by being able to simultaneously view the ground truth and model output for every region, as well as the entire image. Additionally, the user can also visualize outputs on a full-image basis.
 
 The following gif shows the output selection and visualization process:
 
@@ -60,14 +60,14 @@ The following gif shows the output selection and visualization process:
 
 The user can click once on the output to be visualized, and it is then overlayed on the existing plot. This way, visualized outputs can be stacked on another for a better visual comparison. The user can also double-click on a single output to isolate it, i.e. only that output is visualized.
 
-In the full-document output, the current region being shown above is highlighted in red, so that the user knows where the reigon is with respect to the document as a whole.
+In the full-document output, the current region being shown above is highlighted in red, so that the user knows where the reigon is with respect to the image as a whole.
 
 
 
 
 ### Box-Supervised Layout:
 
-This layout is primarily useful for those tasks which involve weakly-supervised region segmentation with the help of bounding boxes. Specifically, the tool enables the user to view the various possible outputs within the pipeline of the model on a per-region basis. 
+This layout is primarily useful for those tasks in which the user would like to visualize data on a per-region basis. Specifically, the tool enables the user to view the various possible outputs obtained for a single region in the image. In our case, the data shown in the box-supervised layout has been obtained by a weakly-supervised bounding box segmentation model. 
 
 For a single region, the app renders a plot with only the current region of interest shown. The user can select the outputs they wish to visualize and so the different outputs can be compared.
 
