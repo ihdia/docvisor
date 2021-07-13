@@ -28,7 +28,8 @@ Shown below is an example metadata file:
                     .
             "Class N":"/path/to/class_N.json"
         },
-        "outputMasks": {"output1":1,"output2":0, ... , "outputN":1}
+        "outputMasks": {"output1":1,"output2":0, ... , "outputN":1},
+        "defaultDisplayed": ["output1-mask","output2-mask", ... , "outputM-mask"]
 
     }
 }
@@ -53,6 +54,10 @@ Shown below is an example metadata file:
 5. `outputMasks`:**dict**
 
     `outputMasks` is a dictionary with the keys `groundTruth` and `modelPrediction`, and their corresponding values a boolean - whether the output should have a mask or not in the visualization plot.
+
+6. `defualtDisplayed`:**list**
+
+    `defaultDisplayed` is a list of all the outputs the user wishes to be displayed and [locked](fa_settings.html#display-options) by default. The user should enter the exact output they wish to display. As shown in the example above, the user must provide not just the output to be shown, but also which of the `pts`, `polygon` or  `mask` outputs should be shown.
 
 ### Step 1.2 Setup Directory
 
