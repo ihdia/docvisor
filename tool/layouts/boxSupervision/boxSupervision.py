@@ -33,8 +33,13 @@ def get_json_data(metaData):
         outputMasks = metaData["outputMasks"]
     else:
         outputMasks = None
+    
+    if "defaultDisplayed" in metaData.keys():
+        defaultDisplayed = metaData["defaultDisplayed"]
+    else:
+        defaultDisplayed = None
 
-    return data,outputMasks
+    return data,outputMasks,defaultDisplayed
 
 def filter_by_dataset(dataset,data):
     """
@@ -140,7 +145,7 @@ def app(metaData):
     # Key value for the current page layout to avoid conflicts with the other pages of the same layout type (box-supervised layout in this case)
 
     key = metaData["metaData"]["key"]
-    data,outputMasks = get_json_data(metaData["metaData"])
+    data,outputMasks,defaultDisplayed = get_json_data(metaData["metaData"])
 
     # Gets current state of app, so that session variables such as counter are preserved after the app restarts
     
@@ -169,6 +174,10 @@ def app(metaData):
 
             if outputMasks[output_type]:
                 temp[output_type+"-mask"] = False
+
+                if defaultDisplayed is not None:
+                    for d in defaultDisplayed:
+                        temp[d] = True    
         
         state.outputs_locked[key] = temp
 

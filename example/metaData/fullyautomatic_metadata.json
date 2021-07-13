@@ -6,7 +6,8 @@
             "train":"example/jsonData/FullyAutomatic/fullyautomatic/train.json",
             "test":"example/jsonData/FullyAutomatic/fullyautomatic/test.json"
         },
-        "outputMasks": {"groundTruth":1,"modelPrediction":1}
+        "outputMasks": {"groundTruth":1,"modelPrediction":1},
+        "defaultDisplayed": ["groundTruth-mask","modelPrediction-mask"]
 
     }
 }

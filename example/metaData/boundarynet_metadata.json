@@ -6,7 +6,8 @@
         "train": "example/jsonData/BoxSupervised/boundarynet/train.json",
         "test": "example/jsonData/BoxSupervised/boundarynet/test.json"
     },
-        "outputMasks":{"poly":1,"gcn_output":0,"encoder_output":1}
+        "outputMasks":{"poly":1,"gcn_output":0,"encoder_output":1},
+        "defaultDisplayed": ["poly-polygon","encoder_output-polygon"]
     }
 }
 

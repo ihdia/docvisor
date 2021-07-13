@@ -31,8 +31,13 @@ def get_json_data(metaData):
         outputMasks = metaData["outputMasks"]
     else:
         outputMasks = None
+    
+    if "defaultDisplayed" in metaData.keys():
+        defaultDisplayed = metaData["defaultDisplayed"]
+    else:
+        defaultDisplayed = None
 
-    return data,outputMasks
+    return data,outputMasks,defaultDisplayed
 
 def filter_by_dataset(dataset,data):
     """
@@ -227,7 +232,7 @@ def app(metaData):
     # Key value for the current page layout to avoid conflicts with the other pages of the same layout type (box-supervised layout in this case)
 
     key = metaData["metaData"]["key"]
-    data,outputMasks = get_json_data(metaData["metaData"])
+    data,outputMasks,defaultDisplayed = get_json_data(metaData["metaData"])
 
     # Gets current state of app, so that session variables such as counter are preserved after the app restarts
 
@@ -251,7 +256,12 @@ def app(metaData):
             temp[output_type+"-pts"] = False
 
             if outputMasks[output_type]:
+
                 temp[output_type+"-mask"] = False
+
+                if defaultDisplayed is not None:
+                    for d in defaultDisplayed:
+                        temp[d] = True            
         
         state.fa_outputs_locked_region[key] = temp
 
@@ -265,8 +275,12 @@ def app(metaData):
             temp[output_type+"-polygons"] = False
             temp[output_type+"-pts"] = False
 
-            if outputMasks[output_type]:
+            if outputMasks[output_type]:                
                 temp[output_type+"-mask"] = False
+
+                if defaultDisplayed is not None:
+                    for d in defaultDisplayed:
+                        temp[d] = True
         
         state.fa_outputs_locked_document[key] = temp
     
