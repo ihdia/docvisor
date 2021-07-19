@@ -59,6 +59,8 @@ Shown below is an example metadata file:
 
     `defaultDisplayed` is a list of all the outputs the user wishes to be displayed and [locked](fa_settings.html#display-options) by default. The user should enter the exact output they wish to display. As shown in the example above, the user must provide not just the output to be shown, but also which of the `pts`, `polygon` or  `mask` outputs should be shown.
 
+An example instance of the metadata file can be found [here](https://github.com/ihdia/docvisor/blob/main/example/metaData/fullyautomatic_metadata.json)
+
 ### Step 1.2 Setup Directory
 
 Create a directory containing only config files. Each instance of the layout should have a json file. For example, if we are trying to visualize data for two fully automatic models, the following is a possible directory structure:
@@ -162,6 +164,7 @@ The data files are `json` files which contain the data that is to be visualized.
 
 `groundTruth` and `modelPrediction` are lists of points, and are of the form `[[x1,y1],[x2,y2], ... , [xn,yn]]`. `groundTruth` is required, but `modelPrediction` need not exist for every region. Similarly, `regionLabel` and `id` are required, but `metrics` and `collection` are not. `regionLabel` is the region class label for that particular region. `metrics` can have the values of various metrics with which the user can sort the data by during visualization. `collection` is additional information pertaining to the collection from which the image was obtained. 
 
+Example instances of the json data file can be found [here](https://github.com/ihdia/docvisor/tree/main/example/jsonData/FullyAutomatic/fullyautomatic)
 
 ### Step 1.4 Updating the Config File
 

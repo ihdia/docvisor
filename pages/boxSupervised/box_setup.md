@@ -59,6 +59,8 @@ Shown below is an example metadata file:
 
     `defaultDisplayed` is a list of all the outputs the user wishes to be displayed and [locked](box_settings.html#display-options) by default. The user should enter the exact output they wish to display. As shown in the example above, the user must provide not just the output to be shown, but also which of the `pts`, `polygon` or  `mask` outputs should be shown.
 
+An example instance of the metadata file can be found [here](https://github.com/ihdia/docvisor/blob/main/example/metaData/boundarynet_metadata.json)
+
 ### Step 1.2 Setup Directory
 
 Create a directory containing only config files. Each instance of the layout should have a json file. For example, if we are trying to visualize data for two box supervised models, the following is a possible directory structure:
@@ -154,6 +156,7 @@ The json file with the data for the box-supervised layout is a list of dictionar
 
     `collection` is additional information such as the collection the current data belongs to in the dataset.
 
+Example instances of the json data file can be found [here](https://github.com/ihdia/docvisor/tree/main/example/jsonData/BoxSupervised/boundarynet)
 
 ### Step 1.4 Updating the Config File
 
