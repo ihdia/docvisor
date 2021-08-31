@@ -5,15 +5,15 @@ DocVisor is an open-source visualization tool for document layout analysis. With
 ---
 
 <div align="center">
-    <a href="https://youtu.be/V05GbXEBC_g">
+    <a href="https://youtu.be/37CBvyQfPKI">
         <img src="https://img.shields.io/badge/Watch on YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
     </a>
 <br>
 <table>
     <tr>
         <td>
-            <a href="https://youtu.be/V05GbXEBC_g" target="_blank">
-                <img src="http://img.youtube.com/vi/V05GbXEBC_g/maxresdefault.jpg" alt="Watch the video" width="640" height="360" border="5"/>
+            <a href="https://youtu.be/37CBvyQfPKI" target="_blank">
+                <img src="http://img.youtube.com/vi/37CBvyQfPKI/maxresdefault.jpg" alt="Watch the video" width="640" height="360" border="5"/>
             </a>
         </td>
     </tr>
