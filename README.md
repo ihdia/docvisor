@@ -2,6 +2,30 @@
 
 DocVisor is an open-source visualization tool for document layout analysis. With DocVisor, it is possible to visualize data from three prominent document analysis tasks: Full Document Analysis, OCR and Box-Supervised Region Parsing. DocVisor offers various features such as ground-truth and intermediate output visualization, sorting data by key metrics as well as comparison of outputs from various other models simultaneously.
 
+---
+
+<div align="center">
+    <a href="https://youtu.be/V05GbXEBC_g">
+        <img src="https://img.shields.io/badge/Watch on YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
+    </a>
+<br>
+<table>
+    <tr>
+        <td>
+            <a href="https://youtu.be/V05GbXEBC_g" target="_blank">
+                <img src="http://img.youtube.com/vi/V05GbXEBC_g/maxresdefault.jpg" alt="Watch the video" width="640" height="360" border="5"/>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <th><samp>Teaser Video (Click on Image above)</samp></th>
+    </tr>
+</table>
+</div>
+    
+---
+
+
 # Contents:
 - [About DocVisor](#about-docvisor)
 - [DocVisor Features](#docvisor-features)
