@@ -13,7 +13,7 @@ DocVisor is an open-source visualization tool for document layout analysis. With
     <tr>
         <td>
             <a href="https://youtu.be/37CBvyQfPKI" target="_blank">
-                <img src="http://img.youtube.com/vi/37CBvyQfPKI/maxresdefault.jpg" alt="Watch the video" width="640" height="360" border="5"/>
+                <img src="https://img.youtube.com/vi/37CBvyQfPKI/hqdefault.jpg" alt="Watch the video" width="640" height="360" border="5"/>
             </a>
         </td>
     </tr>
