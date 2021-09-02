@@ -2,6 +2,7 @@ import layouts.boxSupervision.PlotImage as PlotImage
 import SessionState
 import streamlit as st
 import json
+import os
 
 @st.cache(allow_output_mutation=True)
 def get_json_data(metaData):
@@ -23,9 +24,17 @@ def get_json_data(metaData):
     data = {}
 
     for dataset in metaData["dataPaths"].keys():
+
+        if "dataFormat" in metaData.keys():
+            
+            if not os.path.exists("/".join(metaData["dataPaths"][dataset].split("/")[:-1]) + "/" + metaData["dataPaths"][dataset].split("/")[-1].split(".")[0] + "-" + metaData["dataFormat"] + ".json"):
+                os.system("python3 parse_"+metaData["dataFormat"]+"_weakly_supervised"+".py "+metaData["dataPaths"][dataset])
         
-        with open(metaData["dataPaths"][dataset],"r") as f:
-            loadedData = json.load(f)
+            with open("/".join(metaData["dataPaths"][dataset].split("/")[:-1]) + "/" + metaData["dataPaths"][dataset].split("/")[-1].split(".")[0] + "-" + metaData["dataFormat"] + ".json","r") as f:
+                loadedData = json.load(f)
+        else:
+            with open(metaData["dataPaths"][dataset],"r") as f:
+                loadedData = json.load(f)
         
         data[dataset] = loadedData
     
@@ -217,9 +226,14 @@ def app(metaData):
 
     selected_region_data = region_data[state.region[key]]
 
+    metrics_list = ["None"] 
+    
+    if "metrics" in selected_region_data[0].keys():
+        metrics_list += list(selected_region_data[0]["metrics"].keys())
+    
     sort_by = st.sidebar.selectbox(
         'Sort by (metrics)',
-        ["None"]+list(selected_region_data[0]["metrics"].keys())
+        metrics_list
     )
 
     order = st.sidebar.selectbox(

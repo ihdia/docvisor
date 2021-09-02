@@ -1,7 +1,7 @@
-from os import curdir
 import streamlit as st
 import json
 import SessionState
+import os
 import layouts.fullyAutomatic.PlotImage as PlotImage
 
 @st.cache(allow_output_mutation=True)
@@ -21,9 +21,17 @@ def get_json_data(metaData):
     data = {}
 
     for dataset in metaData["dataPaths"].keys():
+
+        if "dataFormat" in metaData.keys():
+            
+            if not os.path.exists("/".join(metaData["dataPaths"][dataset].split("/")[:-1]) + "/" + metaData["dataPaths"][dataset].split("/")[-1].split(".")[0] + "-" + metaData["dataFormat"] + ".json"):
+                os.system("python3 parse_"+metaData["dataFormat"]+"_instance"+".py "+metaData["dataPaths"][dataset])
         
-        with open(metaData["dataPaths"][dataset],"r") as f:
-            loadedData = json.load(f)
+            with open("/".join(metaData["dataPaths"][dataset].split("/")[:-1]) + "/" + metaData["dataPaths"][dataset].split("/")[-1].split(".")[0] + "-" + metaData["dataFormat"] + ".json","r") as f:
+                loadedData = json.load(f)
+        else:
+            with open(metaData["dataPaths"][dataset],"r") as f:
+                loadedData = json.load(f)
         
         data[dataset] = loadedData
     
