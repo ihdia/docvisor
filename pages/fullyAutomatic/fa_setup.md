@@ -61,6 +61,32 @@ Shown below is an example metadata file:
 
 An example instance of the metadata file can be found [here](https://github.com/ihdia/docvisor/blob/main/example/metaData/fullyautomatic_metadata.json)
 
+#### Multiple Format Support
+
+DocVisor is compatible with files of the MS-COCO segmentation format. To use a json file which is of the COCO format, simply add `dataFormat` to your metadata file with the value `"coco"`. An example file is shown below:
+
+```
+{
+    "metaData":{
+        "pageLayout": "Fully Automatic Region Parsing", 
+        "pageName": "FullyAutomatic", 
+        "dataPaths": {
+            "Class 1":"/path/to/class_1.json",
+            "Class 2":"/path/to/class_2.json",
+                    .
+                    .
+                    .
+            "Class N":"/path/to/class_N.json"
+        },
+        "outputMasks": {"output1":1,"output2":0, ... , "outputN":1},
+        "defaultDisplayed": ["output1-mask","output2-mask", ... , "outputM-mask"],
+        "dataFormat": "coco"
+
+    }
+}
+```
+
+
 ### Step 1.2 Setup Directory
 
 Create a directory containing only config files. Each instance of the layout should have a json file. For example, if we are trying to visualize data for two fully automatic models, the following is a possible directory structure:

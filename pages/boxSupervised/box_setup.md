@@ -61,6 +61,32 @@ Shown below is an example metadata file:
 
 An example instance of the metadata file can be found [here](https://github.com/ihdia/docvisor/blob/main/example/metaData/boundarynet_metadata.json)
 
+#### Multiple Format Support
+
+DocVisor is compatible with files of the MS-COCO segmentation format. To use a json file which is of the COCO format, simply add `dataFormat` to your metadata file with the value `"coco"`. An example file is shown below:
+
+```
+{
+    "metaData":{
+        "pageLayout": "Box-supervised Region Parsing", 
+        "pageName": "BoundaryNet", 
+        "dataPaths": {
+            "Class 1":"/path/to/class_1.json",
+            "Class 2":"/path/to/class_2.json",
+                    .
+                    .
+                    .
+            "Class N":"/path/to/class_N.json"
+        },
+        "outputMasks": {"output1":1,"output2":0, ... , "outputN":1},
+        "defaultDisplayed": ["output1-polygon","output2-polygon", ... , "outputM-polygon"],
+        "dataFormat": "coco"
+
+    }
+}
+```
+
+
 ### Step 1.2 Setup Directory
 
 Create a directory containing only config files. Each instance of the layout should have a json file. For example, if we are trying to visualize data for two box supervised models, the following is a possible directory structure:
@@ -138,7 +164,7 @@ The json file with the data for the box-supervised layout is a list of dictionar
 
 2. `outputs`:**dict (required)**
 
-    `outputs` is an dictionary of lists. Each list in turn stores the points of the output polygon to be visualized. In the above example, there are three outputs to be visualized: `ground_truth`, `gcn_output` and `encoder_output`.
+    `outputs` is an dictionary of lists. Each list in turn stores the points of the output polygon to be visualized. In the above example, there are three outputs to be visualized: `ground_truth`, `gcn_output` and `encoder_output`. **Note that the coordinates should be relative to the bounding box for each region**. Basically, subtract the x and y coordinates of the top-left of the bounding box for each point.
 
 3. `metrics`:**dict**
 
@@ -150,7 +176,7 @@ The json file with the data for the box-supervised layout is a list of dictionar
 
 5. `bbox`:**list (required)**
 
-    `bbox` is the user-annotated bounding box for the current region. 
+    `bbox` is the user-annotated bounding box for the current region. The bounding box should be of the form `[x_0,y_0,w,h]`, where `x_0` is the x-coordinate of the top-left corner, `y_0` is the y-coordinate of the top-left corner, `w` and `h` are the width and height of the bounding box respectively.
 
 6. `collection`:**string**
 
