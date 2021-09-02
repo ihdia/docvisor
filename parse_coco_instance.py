@@ -2,6 +2,10 @@ import json
 import numpy as np
 import sys
 
+"""
+Assumes ground truth annotation, groundTruth label can be changed according to data.
+"""
+
 class NumpyEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, np.ndarray):
@@ -21,7 +25,7 @@ for region in data["annotations"]:
         temp["imagePath"] = data["images"][region["image_id"]]["file_name"]
 
         temp2 = {}
-        temp2["groundTruth"] = np.stack((np.array(region["segmentation"][0][::2])-region["bbox"][0],np.array(region["segmentation"][0][1::2])-region["bbox"][1]),axis=1)
+        temp2["groundTruth"] = np.stack((np.array(region["segmentation"][0][::2]),np.array(region["segmentation"][0][1::2])),axis=1)
         temp2["regionLabel"] = next((item for item in data["categories"] if item["id"] == region["category_id"]), None)["name"]
         temp2["id"] = str(region["image_id"])
         temp["regions"] = [temp2]
@@ -30,7 +34,7 @@ for region in data["annotations"]:
     
     else:
         temp2 = {}
-        temp2["groundTruth"] = np.stack((np.array(region["segmentation"][0][::2])-region["bbox"][0],np.array(region["segmentation"][0][1::2])-region["bbox"][1]),axis=1)
+        temp2["groundTruth"] = np.stack((np.array(region["segmentation"][0][::2]),np.array(region["segmentation"][0][1::2])),axis=1)
         temp2["regionLabel"] = next((item for item in data["categories"] if item["id"] == region["category_id"]), None)["name"]
         temp2["id"] = str(region["image_id"])
         temp["regions"] = [temp2]

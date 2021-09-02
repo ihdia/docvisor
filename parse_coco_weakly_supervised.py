@@ -2,6 +2,10 @@ import json
 import numpy as np
 import sys
 
+"""
+Assumes ground truth annotation, groundTruth label can be changed according to data.
+"""
+
 class NumpyEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, np.ndarray):
@@ -17,7 +21,7 @@ for region in data["annotations"]:
     temp = {}
     temp["imagePath"] = data["images"][region["image_id"]]["file_name"]
     temp["outputs"] = {}
-    temp["outputs"]["groundTruth"] = np.stack((np.array(region["segmentation"][0][::2])-region["bbox"][0],np.array(region["segmentation"][0][1::2])-region["bbox"][1]),axis=1)
+    temp["outputs"]["groundTruth"] = np.stack((np.array(region["segmentation"][0][::2]),np.array(region["segmentation"][0][1::2])),axis=1)
     temp["regionLabel"] = next((item for item in data["categories"] if item["id"] == region["category_id"]), None)["name"]
     temp["bbox"] = region["bbox"]
 
