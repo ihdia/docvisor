@@ -1,0 +1,11 @@
+{
+    "metaData": {
+        "pageLayout": "OCR",
+        "pageName": "LatexOCR",
+        "dtype":"latex",
+        "dataPaths": {
+            "Train": "example/jsonData/OCR/latex_ocr.json"
+            
+        }
+    }
+}

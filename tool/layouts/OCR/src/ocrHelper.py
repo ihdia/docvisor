@@ -12,7 +12,9 @@ class OCRInputError(Exception):
 
 class OCRHelper:
 
-    def __init__(self,jsonFilePath):
+    def __init__(self,jsonFilePath,isDataLatex=False):
+
+        self.isDataLatex = isDataLatex
 
         if not os.path.exists(jsonFilePath):
             # print(jsonFilePath)
@@ -48,7 +50,7 @@ class OCRHelper:
             for i in range(self.no_ocr_models):
                 model = self.models[i]
 
-                if "attentions" in self.JSONdata[0]['outputs'][model]:
+                if not self.isDataLatex and "attentions" in self.JSONdata[0]['outputs'][model]:
                     self.isAtleastSingleAttentionModelPresent =True
                     self.attentionModelIndexes.append(i)
 

@@ -1,0 +1,44 @@
+[
+    {
+        "id": "d382227fdaf0472d813c345e8bddb1dd",
+        "imagePath": "example/data/OCR/latex_ocr/1.png",
+        "groundTruth": "\\frac{2 p-2}{p} \\div \\frac{4 p-4}{9 p^{2}}",
+        "outputs": {
+            "indicOCR-v2-C3": {
+               "prediction":"\\frac{2 p-2}{p} \\div \\frac{4 p-4}{9 p^{2}}",
+               "metrics":{
+                "confidence": 0.9942260226265052,
+                "confidence_rate": 0.9942999454546179
+               }
+            }
+        }
+    },
+    {
+        "id": "d382227fdaf0472d813c345e8bddb1d3",
+        "imagePath": "example/data/OCR/latex_ocr/2.jpg",
+        "groundTruth": "\\frac{-b \\pm \\sqrt{b^{2}-4 a c}}{2 a}",
+        "outputs": {
+            "indicOCR-v2-C3": {
+               "prediction":"\\frac{-b \\pm \\sqrt{b^{2}-4 a c}}{2 a}",
+               "metrics":{
+                    "confidence": 0.997059396020232,
+                    "confidence_rate": 0.997059396020232
+               }
+            }
+        }
+    },
+    {
+        "id": "d382227fdaf0472d813w345e8bddb1d3",
+        "imagePath": "example/data/OCR/latex_ocr/3.jpg",
+        "groundTruth": "\\lim _{x \\rightarrow 3}\\left(\\frac{x^{2}+9}{x-3}\\right)",
+        "outputs": {
+            "indicOCR-v2-C3": {
+               "prediction":"\\lim _{x \\rightarrow 3}\\left(\\frac{x^{2}+9}{x-3}\\right)",
+               "metrics":{
+                    "confidence": 0.9982182085336344,
+                    "confidence_rate": 0.9982182085336344
+               }
+            }
+        }
+    }
+]

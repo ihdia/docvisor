@@ -50,6 +50,7 @@ jsonDataExample = {
     "metaData": {
         "pageLayout": "OCR",
         "pageName": "Sanskrit-OCR",
+        "dtype":"data type -- possible options are 'normal' and 'latex' -- mandatory only if latex", 
         "dataPaths": {
             "train": "/train/train_data.json",
             "val": "/val/val_data.json",
@@ -129,7 +130,8 @@ def getLayoutMetaData():
                 elif key == 'dataPaths' and type(data["metaData"][key])!=dict:
                     displayInvalidTypeJSONError(key,file)
                     return -1
-
+            if 'dtype' not in data["metaData"]:
+                data["metaData"]['dtype'] = 'normal'
 
             if data["metaData"]["pageLayout"] not in list(pageLayoutFileMap.keys()):
                 st.warning(f'Page Layout has to be one of '+" ".join(list(pageLayoutFileMap.keys())))

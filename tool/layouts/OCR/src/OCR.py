@@ -83,7 +83,10 @@ def app(metaData=None):
 
         for datasetClass in metaData["metaData"]["dataPaths"]:
             jsonFile = metaData["metaData"]["dataPaths"][datasetClass]
-            ocr = OCRHelper(jsonFile)
+            isDataLatex = False
+            if metaData["metaData"]["dtype"] == "latex":
+                isDataLatex = True
+            ocr = OCRHelper(jsonFile,isDataLatex)
             subOCRs[datasetClass] = ocr
         return subOCRs
     
@@ -529,8 +532,17 @@ def app(metaData=None):
                                 
                                 displayModelHeading('Ground Truth','ground-truth')
 
+                                
+                                if ocr.isDataLatex:
+                                    st.text("Compiled Latex:")
+                                    st.latex(ground)
+                                    st.markdown("Original Ground Truth String:")
+                               
+                                
+                                
                                 styleString = "<style>.big-font {font-size:"+str(state.fontSize["playground"])+"px; !important;}</style>"
                                 st.markdown(styleString, unsafe_allow_html=True)
+
                                 st.markdown(f'<p class="big-font">{ground}</p>', unsafe_allow_html=True)
 
                     try:
@@ -541,9 +553,14 @@ def app(metaData=None):
                     displayModelHeading(disp_model,'normal-model')
                     
                     if predicted is not None:
-                            styleString = "<style>.big-font {font-size:"+str(state.fontSize["playground"])+"px; !important;}</style>"
-                            st.markdown(styleString, unsafe_allow_html=True)
-                            st.markdown(f'<p class="big-font">{predicted}</p>', unsafe_allow_html=True)
+                        if ocr.isDataLatex:
+                            st.text("Compiled Latex:")
+                            st.latex(predicted)
+                            st.text("Original Predicted String:")
+                            
+                        styleString = "<style>.big-font {font-size:"+str(state.fontSize["playground"])+"px; !important;}</style>"
+                        st.markdown(styleString, unsafe_allow_html=True)
+                        st.markdown(f'<p class="big-font">{predicted}</p>', unsafe_allow_html=True)
                     else:
                         st.markdown('I am NONE')
                     
