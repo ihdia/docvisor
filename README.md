@@ -32,6 +32,7 @@ DocVisor is an open-source visualization tool for document layout analysis. With
     - [OCR Layout](#ocr-layout)
         - [Text Selection](#text-selection)
         - [Image Selection](#image-selection)
+        - [Latex OCR](#latex-ocr)
     - [Fully Automatic Layout](#fully-automatic-layout)
         - [Indiscapes-v2 Dataset](#indiscapes-v2-dataset)
         - [PubTabNet Dataset](#pubtabnet-dataset)
@@ -82,7 +83,15 @@ The user can select a sub-portion of the image, and the corresponding substring 
 
 ![gif showing Image selection in ocr](gifs/ImageSelectionExample.gif)
 
-Gif depicting the Image2Text mapping using the Image Selection feature provided in OCR layout of the DocVisor tool.
+Gif depicting the Image2Text mapping using the Image Selection feature provided in OCR layout of the DocVisor tool. 
+
+## Latex OCR: 
+
+The tool also supports data involving latex. The tool displays both the compiled and actual ground truth/ predicted string. This feature is presently only for non-attention models. The user can use this feature by setting the `dtype` variable in the metadata to `latex`.
+
+![gif showing Image selection in ocr](gifs/latex_ocr.gif)
+
+Gif depicting the Latex support provided by the OCR layout of the docvisor tool.
 
 
 ## Fully Automatic Layout
