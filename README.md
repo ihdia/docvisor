@@ -93,6 +93,12 @@ Gif depicting the Image2Text mapping using the Image Selection feature provided 
 
 Gif showing the visualization of ground Truth and predictions on the Indiscapes-v2 dataset using the Fully Automatic Layout.
 
+### MS-COCO Dataset
+
+![gif showing visualization of MS-COCO dataset usinf fully automatic layout](gifs/ms-coco-docvisor.gif)
+
+Gif showing the visualization of ground Truth and predictions on the MS-COCO dataset using the Fully Automatic Layout.
+
 ### PubTabNet Dataset
 Our Fully Automatic Layout can also be used to load and visulaize the PubTabNet dataset. A gif of the same is added below:
 
