@@ -22,7 +22,8 @@ for region in data["annotations"]:
     if region["image_id"] not in formatted_data.keys():
     
         temp = {}
-        temp["imagePath"] = data["images"][region["image_id"]]["file_name"]
+
+        temp["imagePath"] = next((item for item in data["images"] if item["id"] == region["image_id"]),None)["file_name"]
 
         temp2 = {}
         temp2["groundTruth"] = np.stack((np.array(region["segmentation"][0][::2]),np.array(region["segmentation"][0][1::2])),axis=1)
@@ -34,7 +35,14 @@ for region in data["annotations"]:
     
     else:
         temp2 = {}
-        temp2["groundTruth"] = np.stack((np.array(region["segmentation"][0][::2]),np.array(region["segmentation"][0][1::2])),axis=1)
+        
+        # only segmentation of list type supported for now
+
+        if isinstance(region["segmentation"],list):
+            temp2["groundTruth"] = np.stack((np.array(region["segmentation"][0][::2]),np.array(region["segmentation"][0][1::2])),axis=1)
+        else:
+            continue
+
         temp2["regionLabel"] = next((item for item in data["categories"] if item["id"] == region["category_id"]), None)["name"]
         temp2["id"] = str(region["image_id"])
         temp["regions"] = [temp2]
