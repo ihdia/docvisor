@@ -45,7 +45,7 @@ class FullyAutomaticRegionImage:
         maxx = min(self.image.shape[1],maxx+20)
         maxy = min(self.image.shape[0],maxy+20)
         
-        self.bbox = [minx,miny,maxx,maxy]
+        self.bbox = [int(minx),int(miny),int(maxx),int(maxy)]
 
 
     def renderImage(self):
