@@ -809,7 +809,10 @@ def app(metaData=None):
                 if ground is not None:
                     with st.sidebar.beta_expander("Render:"):
                         st.markdown("### Text Font Size:")
-                        state.fontSize["playground"] = st.slider("Choose Font Size(px) for the text playground via slide bar" , 10,300,state.fontSize["playground"])
+                        state.fontSize["playground"] = st.slider("Choose Font Size(px) for the text playground via slide bar" , 
+                                                                 10,
+                                                                 300,
+                                                                 state.fontSize["playground"])
 
                         pgfontInput = st.text_input("Or enter a font value",state.fontSize["playground"],key="playground")
                         if pgfontInput!='':
