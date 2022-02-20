@@ -164,10 +164,11 @@ You can load one or more of these tools to the DocVisor tool at any given point 
 
 ## Step 3: Setting up your environment
 
-1. Create a conda environment using the following command:
+1. Create a conda environment and activate it, using the following command:
 
     ```
     conda create --name docvisor python=3.7
+    conda activate docvisor
     ```
 2. Ensure that the pip points to the docvisor environment by running `which pip`. If it does not, then run the following command:
 
