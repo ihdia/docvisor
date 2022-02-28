@@ -146,7 +146,7 @@ class OCRHelper:
         try:
             im = Image.open(imagePath)
         except:
-            st.warning('The Image with path {imagePath} either does not exists or is not readable')
+            st.warning(f'The Image with path {imagePath} either does not exists or is not readable')
             return -1
             
         im = ImageOps.grayscale(im)
